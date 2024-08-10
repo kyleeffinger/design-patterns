@@ -1,0 +1,18 @@
+Practice Problem: Traffic Light System
+
+Design and implement a state machine for a traffic light system. The traffic light has three states:
+
+Red: Cars must stop.
+Green: Cars can go.
+Yellow: Cars should prepare to stop.
+The transitions between these states are as follows:
+
+From Red to Green after a timer expires.
+From Green to Yellow after a timer expires.
+From Yellow to Red after a timer expires.
+
+Requirements
+
+State Interface: Define the common interface for all states.
+Concrete States: Implement the Red, Green, and Yellow states.
+Context: Implement the TrafficLight class that maintains the current state and transitions between states based on a timer.

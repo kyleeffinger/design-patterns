@@ -1,0 +1,14 @@
+
+Real-World Example: Notification Service with Factory Design Pattern
+
+Problem Statement
+
+You are tasked with creating a notification service for a large-scale application. This service should be able to send notifications via different channels such as Email, SMS, and Push Notifications. Each notification type will have its own implementation details for sending messages.
+
+Requirements:
+
+Base Class: Create an abstract base class Notification with an abstract method send(message: str, recipient: str).
+Concrete Classes: Implement three concrete classes EmailNotification, SMSNotification, and PushNotification that inherit from Notification. Each class should implement the send method.
+Notification Factory: Implement a factory class NotificationFactory that has a static method create_notification(channel: str) -> Notification. This method should return an instance of the appropriate notification type based on the input string.
+Configuration: Implement a configuration system that allows selecting the notification channel based on user preferences or system settings.
+Main Program: Write a main program that uses the NotificationFactory to create instances of different notification types and sends a test message.
